@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
+    'collectfast'
     'django.contrib.staticfiles',
     'pypro.base',
 ]
@@ -143,9 +144,12 @@ if AWS_ACCESS_KEY_ID:
     AWS_S3_OBJECT_PARAMETERS = {'CacheControl': 'max_age=86400'}
     AWS_PRELOAD_METADATA = True
     AWS_AUTO_CREATE_BUCKET = False
-    AWS_QUERYSTRING_AUTH = True
+    AWS_QUERYSTRING_AUTH = False
     AWS_S3_CUSTOM_DOMAIN = None
-    AWS_DEFAULT_ACL = 'private'
+
+    COLLECFAST_ENABLED = False
+
+    AWS_DEFAULT_ACL = None
 
 # static assets
     STATICFILES_STORAGE = 's3_folder_storage.s3.StaticStorage'
