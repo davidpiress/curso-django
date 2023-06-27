@@ -84,6 +84,7 @@ WSGI_APPLICATION = 'pypro.wsgi.application'
 
 # Cofiguração de django Toolbar
 
+
 INTERNAL_IPS = config('INTERNAL_IPS', cast=Csv(), default='127.0.0.1')
 
 if DEBUG:
@@ -137,7 +138,7 @@ USE_TZ = True
 
 # Configurações de ambiente de desenvolvimento
 
-STATIC_URL = 'static/'
+STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 MEDIA_URL = '/media/'
@@ -197,3 +198,4 @@ if SENTRY_DNS:
         # django.contrib.auth) you may enable sending PII data.
         send_default_pii=True
     )
+
