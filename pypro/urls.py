@@ -25,6 +25,7 @@ urlpatterns = [
     path('', include('pypro.base.urls')),
     path('aperitivos/', include('pypro.aperitivos.urls')),
 
+
 ]
 
 
