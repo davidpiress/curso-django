@@ -13,7 +13,6 @@ import os
 from functools import partial
 import dj_database_url
 from decouple import config, Csv
-
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -25,7 +24,6 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = config('SECRET_KEY')
-
 # 'django-insecure-h6nfa_-c$wqu=mo@+y1^doybnk+qo+m-#xk@pbdidfxuyf4g(#'
 
 # SECURITY WARNING: don't run with debug turned on in production!
@@ -89,6 +87,8 @@ parser_database = partial(dj_database_url.parse, conn_max_age=600)
 DATABASES = {
     'default': config('DATABASE_URL', default=default_db_url, cast=parser_database)
 }
+
+
 
 DATA_BASES = {
     'default': {

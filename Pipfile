@@ -11,6 +11,7 @@ psycopg2-binary = "*"
 python-decouple = "*"
 django-s3-folder-storage = "*"
 
+
 [dev-packages]
 pytest-django = "*"
 
