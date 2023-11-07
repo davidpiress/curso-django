@@ -15,6 +15,7 @@ collectfast = "*"
 tzdata = "*"
 typing-extensions = "*"
 
+
 [dev-packages]
 pytest-django = "*"
 
