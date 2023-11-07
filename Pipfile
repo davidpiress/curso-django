@@ -13,6 +13,7 @@ django-s3-folder-storage = "*"
 flake8 = "*"
 collectfast = "*"
 tzdata = "*"
+typing-extensions = "*"
 
 [dev-packages]
 pytest-django = "*"
