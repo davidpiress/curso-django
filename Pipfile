@@ -5,7 +5,6 @@ name = "pypi"
 
 [packages]
 django = "*"
-gunicorn = "*"
 dj-database-url = "*"
 psycopg2-binary = "*"
 django-s3-folder-storage = "*"
@@ -13,6 +12,7 @@ collectfast = "*"
 tzdata = "*"
 typing-extensions = "*"
 python-decouple = "*"
+gunicorn = "*"
 
 [dev-packages]
 pytest-django = "*"
