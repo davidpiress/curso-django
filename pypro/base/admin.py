@@ -67,12 +67,12 @@ class UserAdmin(admin.ModelAdmin):
 
     def get_urls(self):
         return [
-                   path(
-                       '<id>/password/',
-                       self.admin_site.admin_view(self.user_change_password),
-                       name='auth_user_password_change',
-                   ),
-               ] + super().get_urls()
+            path(
+                '<id>/password/',
+                self.admin_site.admin_view(self.user_change_password),
+                name='auth_user_password_change',
+            ),
+        ] + super().get_urls()
 
     def lookup_allowed(self, lookup, value):
         # Don't allow lookups involving passwords.
@@ -125,7 +125,8 @@ class UserAdmin(admin.ModelAdmin):
             form = self.change_password_form(user, request.POST)
             if form.is_valid():
                 form.save()
-                change_message = self.construct_change_message(request, form, None)
+                change_message = self.construct_change_message(
+                    request, form, None)
                 self.log_change(request, user, change_message)
                 msg = gettext('Password changed successfully.')
                 messages.success(request, msg)
