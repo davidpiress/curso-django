@@ -15,6 +15,7 @@ tzdata = "*"
 typing-extensions = "*"
 python-decouple = "*"
 
+
 [dev-packages]
 pytest-django = "*"
 
