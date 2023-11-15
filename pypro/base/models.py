@@ -9,7 +9,6 @@ class UserManager(BaseUserManager):
     use_in_migrations = True
 
     def _create_user(self, email, password, **extra_fields):
-
         """
 
         Creates and saves a User with the given email and password.
@@ -66,7 +65,8 @@ class User(AbstractBaseUser, PermissionsMixin):
 
         default=False,
 
-        help_text=_('Designates whether the user can log into this admin site.'),
+        help_text=_(
+            'Designates whether the user can log into this admin site.'),
 
     )
 
