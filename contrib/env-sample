@@ -2,8 +2,11 @@ DEBUG=False
 SECRET_KEY=defina sua chave
 ALLOWED_HOSTS=127.0.0.1
 DATABASE_URL=postgres://postgres:postgres@127.0.0.1/testdb
+
 # configurações de AWS s3
+
 AWS_ACCESS_KEY_ID=
 AWS_SECRET_ACCESS_KEY=
 AWS_STORAGE_BUCKET_NAME=
+INTERNAL_IPS=127.0.0.1
 
