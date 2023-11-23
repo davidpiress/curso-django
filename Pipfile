@@ -16,6 +16,7 @@ gunicorn = "*"
 django-debug-toolbar = "*"
 sentry-sdk = "*"
 
+
 [dev-packages]
 pytest-django = "*"
 flake8 = "*"
