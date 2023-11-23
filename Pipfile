@@ -15,6 +15,7 @@ python-decouple = "*"
 gunicorn = "*"
 django-debug-toolbar = "*"
 
+
 [dev-packages]
 pytest-django = "*"
 flake8 = "*"
