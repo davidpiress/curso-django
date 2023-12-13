@@ -15,10 +15,9 @@ python-decouple = "*"
 gunicorn = "*"
 django-debug-toolbar = "*"
 sentry-sdk = "*"
-
+pytest-django = "*"
 
 [dev-packages]
-pytest-django = "*"
 flake8 = "*"
 autopep8 = "*"
 
