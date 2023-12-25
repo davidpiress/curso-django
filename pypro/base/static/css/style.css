@@ -1,6 +1,7 @@
 # Empty CSS file for your own CSS
 container-fluid{
     margin: 0;
+
 }
 
 .main-footer{
@@ -10,3 +11,4 @@ container-fluid{
 .rights{
     background-color: #82b641;
 }
+
