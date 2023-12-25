@@ -2,3 +2,11 @@
 container-fluid{
     margin: 0;
 }
+
+.main-footer{
+    background-color: #9fd25f;
+}
+
+.rights{
+    background-color: #82b641;
+}
